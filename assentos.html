@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/estilos/assentos.css" />
+  <title>Assentos</title>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <img class="logo" src="./assets/imagens/Linkin_Park_logo_2024.svg.png" alt="logo linkin park">
+    <h1>Seleção de Assentos</h1>
+    <nav class="navegacao">
+      <a href="./eventos.html">Inicio</a>
+      <a href="./assentos.html">Assentos</a>
+      <a href="./adicionais.html">Adicionais</a>
+    </nav>
+
+  </header>
+
+  <div class="box">
+    <div class="informacoes">
+      <img src="assets/imagens/linkassentos.webp" class="imagemPrincipal" alt="Banner do evento" />
+
+      <div class="detalhes-do-evento">
+        <h2>Show do Linkin</h2>
+        <p>Data: 26 de Setembro de 2025</p>
+        <p>Local: Univali Itajaí</p>
+        <p>Horário: 19:00</p>
+      </div>
+    </div>
+
+    <div class="selecao-de-assento">
+      <div class="escolha-setor">
+        <h3>Escolha o Setor Desejado</h3>
+        <div class="setores">
+          <div class="setor" data-preco="100" data-tipo="mapa">
+            <h4>Cadeiras Numeradas</h4>
+            <p>R$ 100,00</p>
+          </div>
+
+          <div class="setor" data-preco="200" data-tipo="qtd">
+            <h4>Pista VIP</h4>
+            <p>R$ 200,00</p>
+          </div>
+
+          <div class="setor" data-preco="300" data-tipo="mapa">
+            <h4>Camarote</h4>
+            <p>R$ 300,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mapadelocais">
+        <h3 id="mapaTitulo">Escolha seu assento</h3>
+        <div class="palco">Palco</div>
+
+        <!-- mapa de assentos -->
+        <div class="assentos" id="assentosID" aria-live="polite">
+          <!-- preenchido pelo JS -->
+        </div>
+
+        <div class="situacao">
+          <div class="situacao-item">
+            <div class="indicador livre"></div>
+            <span>Assento Livre</span>
+          </div>
+          <div class="situacao-item">
+            <div class="indicador ocupado"></div>
+            <span>Assento Ocupado</span>
+          </div>
+          <div class="situacao-item">
+            <div class="indicador selecionado"></div>
+            <span>Assento Selecionado</span>
+          </div>
+          <div class="situacao-item">
+            <div class="indicador vip"></div>
+            <span>Assento VIP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quantidade-Assentos" id="quantidadeAssentos">
+        <h3>Selecione a quantidade de Assentos</h3>
+        <div class="controle-de-quantidade">
+          <button class="quantidade-btn" id="botaodeadd">+</button>
+          <button class="quantidade-btn" id="botaodermv">-</button>
+          <div class="quantidade-display" id="quantidadeDisplay">0</div>
+        </div>
+        <p>Máximo de 20 ingressos por compra.</p>
+      </div>
+    </div>
+
+    <div class="resumo-compra">
+      <h3>Resumo da Compra</h3>
+      <div class="resumo-item">
+        <span>Ingressos:</span>
+        <span id="resumoIngresso">Nenhum ingresso selecionado</span>
+      </div>
+      <div class="resumo-item">
+        <span>Setor:</span>
+        <span id="resumoSetor">Nenhum setor selecionado</span>
+      </div>
+      <div class="resumo-item">
+        <span>Valor por ingresso:</span>
+        <span id="resumoIngressoValor">R$ 0,00</span>
+      </div>
+      <div class="resumo-item">
+        <span>Valor total:</span>
+        <span id="valorTotal">R$ 0,00</span>
+      </div>
+
+      <div style="margin-top: 12px">
+        <button id="confirmarBtn">Confirmar compra</button>
+        <button id="resetBtn" style="margin-left: 8px">Resetar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <h1>rodape</h1>
+  </footer>
+
+  <script src="assets/scripts/assentos.js"></script>
+</body>
+
+</html>

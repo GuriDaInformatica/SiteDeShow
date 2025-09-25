@@ -1,0 +1,97 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    width: 5%;
+    border: 3px #fff solid;
+    border-radius: 50%;
+}
+
+.cabecalho {
+    background-color: #212121;
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navegacao {
+    display: flex;
+    gap: 5%;
+}
+
+.navegacao a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: background 0.3s;
+    background-color: #d7d7d7;
+}
+
+.navegacao a:hover {
+    background-color: #575757;
+}
+
+.rodape{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: #212121;
+    color: white;
+    padding: 10px;
+}
+
+.container{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+}
+
+.gaveta{
+    background-color: #fafafa;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.gaveta:hover{
+    background-color: #717171;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.caixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px;
+    flex-wrap: wrap;
+}
